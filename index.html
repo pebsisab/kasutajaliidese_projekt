@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vapiano - Värskuse kodu!</title>
+    <link rel="stylesheet" href="style.css">   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200..700&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body bg-gradient-to-t from-[#ffffff] to-[#8d8e8f] h-screen>
+    <!-- <nav class="relative container mx-auto p-6"></nav> -->
+    <header class="bg-zinc-800 top-0 z-50 h-[50px] relative hidden md:block">
+        <nav class="flex justify-between items-center w-92 mx-auto">
+            <div class="flex items-left"> <!-- Logo ja tekstikont -->
+                <img class="mr-5 mt-2 ml-2" width="22" height="23" src="https://vapiano.ee/wp-content/uploads/2021/01/Apollo-Grupi-logo.svg" alt="apollo-taheke">
+                <a class="text-white mt-2">Liitu Apollo klubiga</a>
+            </div>
+            <div class="nav-links duration-500 md:static absolute bg-zinc-800 md:min-h-fit min-h-[80svh] left-0 md:w-auto w-full flex justify-center items-center px-0">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-3 justify-center">
+                    <li>
+                        <a class="text-white hover:text-yellow-400" href="https://vapiano.ee/menuu/">Apollo e-pood</a>
+                    </li>
+                    <li>
+                        <a class="text-white hover:text-yellow-400" href="https://vapiano.ee/menuu/">Apollo kino </a>
+                    </li>
+                    <li>
+                        <a class="text-white hover:text-yellow-400" href="https://vapiano.ee/telli-ette/">Blender</a>
+                    </li>
+                    <li>
+                        <a class="text-white hover:text-yellow-400" href="https://vapiano.ee/restoranid/">O´Learys</a>
+                    </li>
+                    <li>
+                        <a class="text-white hover:text-yellow-400" href="https://vapiano.ee/pakkumised/">Aphoteka beauty</a>
+                    </li>
+                    <li>
+                        <a class="text-white hover:text-yellow-400" href="https://vapiano.ee/pakkumised/">Petcity</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <nav class="relative container mx-auto p-5">
+        <!-- konteiner -->
+        <div class="drop-shadow-2xl flex items-left justify-between">
+            <!-- logo -->
+            <div class="pt-1">
+                <img width="137" height="36" src="https://vapiano.ee/wp-content/uploads/2020/10/cropped-Vapiano@300x-169x40.png" class="attachment-medium_large size-medium_large wp-image-14" alt="" sizes="(max-width: 768px) 100vw, 768px">
+            </div>
+            <!-- menüü elemendid ja nende vahe -->
+            <div class="font-[Oswald] text-xl hidden md:flex space-x-7 drop-shadow-2xl">
+                <a href="#" class="text-zinc-800 hover:text-red-600 focus:text-red-500" >MENÜÜ</a>
+                <a href="#" class="text-zinc-800 hover:text-red-600" >TELLI ETTE</a>
+                <a href="#" class="text-zinc-800 hover:text-red-600" >RESTORANID</a>
+                <a href="#" class="text-zinc-800 hover:text-red-600" >PAKKUMISED</a>
+                <a href="#" class="text-zinc-800 hover:text-red-600" >ÜRITUSED</a>
+                <a href="#" class="text-zinc-800 hover:text-red-600" >BLOGI</a>
+                <a href="#" class="text-zinc-800 hover:text-red-600" >GALERII</a>
+                <a href="#" class="text-zinc-800 hover:text-red-600" >TULE TÖÖLE</a>
+                <a href="#" class="text-zinc-800 hover:text-red-600" >MEIST</a>
+            </div>
+            <!-- hamburgerimenüü -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- mobiilimenüü -->
+        <div class="md:hidden">
+            <div id="menu"     
+            class="absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 font-[Oswald] bg-white sm:w-auto sm:self-center left-2 right-5 drop-shadow-md">
+                <a href="#" class="text-zinc-800 hover:text-red-600 focus-within:" >MENÜÜ</a>
+                <a href="#" class="text-zinc-800 hover:text-red-600" >TELLI ETTE</a>
+                <a href="#" class="text-zinc-800 hover:text-red-600" >RESTORANID</a>
+                <a href="#" class="text-zinc-800 hover:text-red-600" >PAKKUMISED</a>
+                <a href="#" class="text-zinc-800 hover:text-red-600" >ÜRITUSED</a>
+                <a href="#" class="text-zinc-800 hover:text-red-600" >BLOGI</a>
+                <a href="#" class="text-zinc-800 hover:text-red-600" >GALERII</a>
+                <a href="#" class="text-zinc-800 hover:text-red-600" >TULE TÖÖLE</a>
+                <a href="#" class="text-zinc-800 hover:text-red-600" >MEIST</a>
+            </div>
+        </div>
+
+    </nav>
+
+</body>
+</html>
