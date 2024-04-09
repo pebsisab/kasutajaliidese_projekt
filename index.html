@@ -15,83 +15,208 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
-<body bg-gradient-to-t from-[#ffffff] to-[#8d8e8f] h-screen>
-    <!-- <nav class="relative container mx-auto p-6"></nav> -->
-    <header class="bg-zinc-800 top-0 z-50 h-[50px] relative hidden md:block">
-        <nav class="flex justify-between items-center w-92 mx-auto">
-            <div class="flex items-left"> <!-- Logo ja tekstikont -->
-                <img class="mr-5 mt-2 ml-2" width="22" height="23" src="https://vapiano.ee/wp-content/uploads/2021/01/Apollo-Grupi-logo.svg" alt="apollo-taheke">
-                <a class="text-white mt-2">Liitu Apollo klubiga</a>
+<body>
+        <div class="bg-zinc-800 top-0 z-50 h-[50px] relative hidden md:block">
+            <nav class="flex justify-between items-center w-92 mx-auto">
+                <div class="flex items-left"> <!-- Logo ja tekstikont -->
+                    <img class="mr-5 mt-2 ml-2" width="22" height="23" src="https://vapiano.ee/wp-content/uploads/2021/01/Apollo-Grupi-logo.svg" alt="apollo-taheke">
+                    <a class="text-white hover:text-yellow-400 transition delay-100 mt-2 ml-2 mr-5">Liitu Apollo klubiga</a>
+                </div>
+                <div class="nav-links duration-500 md:static mx-auto bg-zinc-800 md:min-h-fit min-h-[100svh] md:w-auto w-full flex justify-center items-center px-0">
+                    <div class="text-white hidden md:flex space-x-7 mt-2 ml-2 text-sm"> <!-- Maintaining space-x-7 -->
+                        <a href="#" class="text-white hover:text-yellow-400 transition delay-100 ">Apollo e-pood</a>
+                        <a href="#" class="text-white hover:text-yellow-400 transition delay-100 ">Apollo kino</a>
+                        <a href="#" class="text-white hover:text-yellow-400 transition delay-100 ">Blender</a>
+                        <a href="#" class="text-white hover:text-yellow-400 transition delay-100">O'Learys</a>
+                        <a href="#" class="text-white hover:text-yellow-400 transition delay-100">Apotheka</a>
+                        <a href="#" class="text-white hover:text-yellow-400 transition delay-100">Apotheka beauty</a>
+                        <a href="#" class="text-white hover:text-yellow-400 transition delay-100">Petcity</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+
+
+<!-- vapiano oma navbar  -->
+
+
+
+
+
+
+<!-- kahe pildiga grid  -->
+          <div class="mx-auto max-w-screen-xl px-28 py-6 sm:px-6 sm:py-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">    
+                    <div class="flex flex-col items-center">
+                      <img class="max-h-60" src="https://vapiano.ee/wp-content/uploads/2020/10/Restaurantfinder-01-01-1024x367.jpg" alt="">
+                      <h2 class="font-roboto text-center text-3xl text-gray-800 mb-4">Leia värskus enda ümber!</h2>
+                      <p class="text-xl text-zinc-700">Leia endale lähim restoran</p>
+                      <button type="submit" class="bg-red-600 text-xl text-white mt-6 px-8 py-2 rounded-md w-25 hover:bg-red-900 transition hover:scale-110">Restoranide nimekiri</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">    
+                  <div class="flex flex-col items-center">
+                    <img class="max-h-40" src="https://vapiano.ee/wp-content/uploads/2022/11/Üritused-Vapianos.png" alt="">
+                    <h2 class="font-roboto text-3xl text-gray-800 mb-4">Broneeri laud</h2>
+                    <p class="text-xl text-zinc-700">Leia endale lähim restoran</p>
+                    <button type="submit" class="bg-red-600 text-xl text-white mt-6 px-8 py-2 rounded-md w-25 hover:bg-red-900 transition hover:scale-110">Restoranide nimekiri</button>
+                  </div>
+              </div>
             </div>
-            <div class="nav-links duration-500 md:static absolute bg-zinc-800 md:min-h-fit min-h-[80svh] left-0 md:w-auto w-full flex justify-center items-center px-0">
-                <ul class="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-3 justify-center">
-                    <li>
-                        <a class="text-white hover:text-yellow-400" href="https://vapiano.ee/menuu/">Apollo e-pood</a>
-                    </li>
-                    <li>
-                        <a class="text-white hover:text-yellow-400" href="https://vapiano.ee/menuu/">Apollo kino </a>
-                    </li>
-                    <li>
-                        <a class="text-white hover:text-yellow-400" href="https://vapiano.ee/telli-ette/">Blender</a>
-                    </li>
-                    <li>
-                        <a class="text-white hover:text-yellow-400" href="https://vapiano.ee/restoranid/">O´Learys</a>
-                    </li>
-                    <li>
-                        <a class="text-white hover:text-yellow-400" href="https://vapiano.ee/pakkumised/">Aphoteka beauty</a>
-                    </li>
-                    <li>
-                        <a class="text-white hover:text-yellow-400" href="https://vapiano.ee/pakkumised/">Petcity</a>
-                    </li>
+        </div>
+
+      <!-- jälgi meid instagramis tehtud kahe gridiga  -->
+
+      <div class="mx-auto max-w-screen-xl px-28 py-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-0">   
+              <div class="flex flex-col justify-center items-center">
+                <h2 class="text-center font-roboto text-3xl text-gray-800 mb-6">JÄLGI MEID INSTAGRAMIS</h2>
+              </div>
+            <div>    
+              <div class="flex flex-col items-center">
+                <h2 class="font-roboto text-3xl text-rose-700 mb-6">#lovevapianoestonia</h2>
+              </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- background-image: url(https://vapiano.ee/wp-content/uploads/2020/10/menu-background-chalk-scaled-e1605263667463.jpg); -->
+<!-- see instagrammi lai pilt vms -->
+<div class="relative h-auto">
+  <img class="w-full h-auto object-cover" src="https://vapiano.ee/wp-content/uploads/2021/04/IG-scaled.jpg" alt="Instagram Image">
+  <div class="absolute inset-0 flex flex-col items-center justify-center">
+    <button class="bg-slate-50 text-2xl py-3 px-6 rounded z-15 text-red-800 transform transition-transform hover:scale-105">@VAPIANOESTONIA</button>
+  </div>
+</div>
+
+
+<!-- footer -->
+    <hr>
+    <footer class="bg-white">
+        <div class="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-2 lg:space-y-12 lg:px-8">
+          <div class="grid grid-cols-1 gap-8 lg:grid-cols-6">
+            <div class="lg:col-span-2">
+              <div class="flex flex-col items-center">
+                <div>
+                  <img class="max-h-12" src="https://www.vapiano.de/img/VAPIANO_Logo_In-House_RGB.png" alt="">
+                </div>
+              
+                <p class="mt-4 max-w-sm font-thin text-black text-lg text-center">
+                  Vapiano on casual restoranikett, mis sümboliseerib värskust, naudingut ja erilist eluhoiakut. Vapiano menüü põhineb ehtsal Itaalia köögil – pakume pitsasid, pastasid, salateid, antipastisid ja magustoite. Meie eesmärgiks on kompromissitu värskus ja kvaliteet, sellest tulenevalt on meie hüüdlauseks „Värskuse kodu“.
+                </p>
+                </div>
+                <div class="mt-4 text-red-700 text-lg hover:text-red-950 text-center" >
+                  <link rel="stylesheet" href="https://tailwindcss.com/docs/max-width">Loe rohkem
+              </div>
+              <ul class="mt-6 flex gap-6">
+                <li>
+                  <a
+                    href="#"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="text-red-600 transition hover:opacity-75"
+                  >
+                    <span class="sr-only">Facebook</span>
+      
+                    <svg class="h-10 w-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+      
+                <li>
+                  <a
+                    href="#"
+                    rel="noreferrer"
+                    target="_blank"
+                    class="text-red-600 transition hover:opacity-75"
+                  >
+                    <span class="sr-only">Instagram</span>
+      
+                    <svg class="h-10 w-10" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        fill-rule="evenodd"
+                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="lg:col-span-2 flex flex-col justify-center items-center">
+                <p class="font-[Oswald] text-gray-900 text-center text-2xl text-bold">Liitu uudiskiraga, telli lõunapakkumised endale iga esmaspäev e-mailile ja saa oma järgmiselt tallimuselt -20% allahindlust.</p>
+                <form action="#" method="POST" class="mt-8 flex flex-col items-center">
+                    <div class="flex flex-col items-center">
+                        <input type="email" name="email" id="email" placeholder="Sinu meiliaadress" required class="px-7 py-4 border border-gray-300 rounded-md mb-2 focus:outline-none">
+                        <button type="submit" class="bg-red-600 text-2xl text-white mt-6 px-8 py-2 rounded-md w-25 hover:bg-red-700 focus:outline-none">Liitu</button>
+                    </div>
+                </form>
+            </div>
+              <div class="lg:col-span-1 flex flex-col justify-center items-center">
+                <p class="mt-6 text-3xl text-gray-900 text-center">INFO</p>
+      
+                <ul class="mt-6 space-y-4 text-sm text-center">
+                  <li>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75"> KKK </a>
+                  </li>
+      
+                  <li>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75"> PRIVAATSUS </a>
+                  </li>
+      
+                  <li>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75"> APOLLO GRUPP </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75"> JÄTKUSUUTLIKUS </a>
+                  </li>
                 </ul>
+              </div>
+              <div class="lg:col-span-1 flex flex-col justify-center items-center">
+                <p class="mt-6 text-3xl text-gray-900 text-center">KONTAKT</p>
+      
+                <ul class="mt-6 space-y-4 text-sm text-center">
+                  <li>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75"> JUHTKOND </a>
+                  </li>
+      
+                  <li>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75"> RESTORANID </a>
+                  </li>
+      
+                  <li>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75"> TAGASISIDE </a>
+                  </li>
+
+                  <li>
+                    <a href="#" class="text-white transition hover:opacity-75"> a </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </nav>
-    </header>
-    
-    <nav class="relative container mx-auto p-5">
-        <!-- konteiner -->
-        <div class="drop-shadow-2xl flex items-left justify-between">
-            <!-- logo -->
-            <div class="pt-1">
-                <img width="137" height="36" src="https://vapiano.ee/wp-content/uploads/2020/10/cropped-Vapiano@300x-169x40.png" class="attachment-medium_large size-medium_large wp-image-14" alt="" sizes="(max-width: 768px) 100vw, 768px">
-            </div>
-            <!-- menüü elemendid ja nende vahe -->
-            <div class="font-[Oswald] text-xl hidden md:flex space-x-7 drop-shadow-2xl">
-                <a href="#" class="text-zinc-800 hover:text-red-600 focus:text-red-500" >MENÜÜ</a>
-                <a href="#" class="text-zinc-800 hover:text-red-600" >TELLI ETTE</a>
-                <a href="#" class="text-zinc-800 hover:text-red-600" >RESTORANID</a>
-                <a href="#" class="text-zinc-800 hover:text-red-600" >PAKKUMISED</a>
-                <a href="#" class="text-zinc-800 hover:text-red-600" >ÜRITUSED</a>
-                <a href="#" class="text-zinc-800 hover:text-red-600" >BLOGI</a>
-                <a href="#" class="text-zinc-800 hover:text-red-600" >GALERII</a>
-                <a href="#" class="text-zinc-800 hover:text-red-600" >TULE TÖÖLE</a>
-                <a href="#" class="text-zinc-800 hover:text-red-600" >MEIST</a>
-            </div>
-            <!-- hamburgerimenüü -->
-            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
-                <span class="hamburger-top"></span>
-                <span class="hamburger-middle"></span>
-                <span class="hamburger-bottom"></span>
-            </button>
+          </div>
         </div>
 
-        <!-- mobiilimenüü -->
-        <div class="md:hidden">
-            <div id="menu"     
-            class="absolute flex flex-col items-center self-end py-8 mt-10 space-y-6 font-[Oswald] bg-white sm:w-auto sm:self-center left-2 right-5 drop-shadow-md">
-                <a href="#" class="text-zinc-800 hover:text-red-600 focus-within:" >MENÜÜ</a>
-                <a href="#" class="text-zinc-800 hover:text-red-600" >TELLI ETTE</a>
-                <a href="#" class="text-zinc-800 hover:text-red-600" >RESTORANID</a>
-                <a href="#" class="text-zinc-800 hover:text-red-600" >PAKKUMISED</a>
-                <a href="#" class="text-zinc-800 hover:text-red-600" >ÜRITUSED</a>
-                <a href="#" class="text-zinc-800 hover:text-red-600" >BLOGI</a>
-                <a href="#" class="text-zinc-800 hover:text-red-600" >GALERII</a>
-                <a href="#" class="text-zinc-800 hover:text-red-600" >TULE TÖÖLE</a>
-                <a href="#" class="text-zinc-800 hover:text-red-600" >MEIST</a>
+        <div class="bg-zinc-800 font-sans text-white p-4">
+            <div class="container mx-auto text-center">
+                <p>&copy; Vapiano Eesti Kõik õigused kaitstud.</p>
             </div>
-        </div>
-
-    </nav>
-
+    </div>
+      </footer>
 </body>
+
 </html>
