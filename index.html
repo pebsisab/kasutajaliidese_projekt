@@ -42,12 +42,62 @@
 <!-- vapiano oma navbar  -->
 
 
+<!--Piltide slider lehe yleval osas-->
+<div class="container">
+  <div class="arrow l top-1/2 cursor-pointer -translate-y-1/2" onclick="prev()">
+      <img class="absolute" src="img/l.png" alt="l nool">
+  </div>
+  <div class="slide slide1 relative">
+    <img class="w-full h-auto" src="img/vap1.jpg" alt="vap1">
+  </div>
+  <div class="slide slide2 relative">
+    <img class="w-full h-auto" src="img/vap2.jpg" alt="vap2">
+  </div>
+  <div class="slide slide3 relative">
+    <img class="w-full h-auto" src="img/vap3.jpg" alt="vap3">
+  </div>
+  <div class="arrow r top-1/2 cursor-pointer -translate-y-1/2" onclick="next()">
+      <!--<img src="img/r.png" alt="right arrow">-->
+      <img class="absolute" src="img/r.png" alt="r nool">
+  </div>
+</div>
+<script>
+  let slide = document.querySelectorAll('.slide');
+  var current = 0;
 
+  function cls(){
+      for(let i = 0; i < slide.length; i++){
+          slide[i].style.display = 'none';
+      }
+  }
+
+  function next(){
+      cls();
+      if(current === slide.length-1) current = -1;
+      current++;
+      slide[current].style.display = 'block';
+
+  } 
+
+  function prev(){
+      cls();
+      if(current === 0) current = slide.length;
+      current--;
+      slide[current].style.display = 'block';
+
+  } 
+
+  function start(){
+      cls();
+      slide[current].style.display = 'block';
+  }
+  start();
+</script>
 
 
 
 <!-- kahe pildiga grid  -->
-          <!-- <div class="mx-auto max-w-screen-xl px-28 py-6 sm:px-2 sm:py-2 sm:px-6 lg:px-8">
+          <div class="mx-auto max-w-screen-xl px-2 sm:px-6 py-6 sm:py-2 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
                 <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">    
                     <div class="flex flex-col items-center">
@@ -66,28 +116,7 @@
                   </div>
               </div>
             </div>
-        </div> -->
-
-        <div class="mx-auto max-w-screen-xl px-2 sm:px-6 py-6 sm:py-2 lg:px-8">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
-              <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">    
-                  <div class="flex flex-col items-center">
-                      <img class="max-h-60" src="https://vapiano.ee/wp-content/uploads/2020/10/Restaurantfinder-01-01-1024x367.jpg" alt="">
-                      <h2 class="font-roboto text-center text-3xl text-gray-800 mb-4">Leia värskus enda ümber!</h2>
-                      <p class="text-xl text-zinc-700">Leia endale lähim restoran</p>
-                      <button type="submit" class="bg-red-600 text-xl text-white mt-6 px-8 py-2 rounded-md w-25 hover:bg-red-900 transition hover:scale-110">Restoranide nimekiri</button>
-                  </div>
-              </div>
-              <div class="bg-white rounded-3xl shadow-lg p-8 border border-gray-200">    
-                  <div class="flex flex-col items-center">
-                      <img class="max-h-40" src="https://vapiano.ee/wp-content/uploads/2022/11/Üritused-Vapianos.png" alt="">
-                      <h2 class="font-roboto text-3xl text-gray-800 mb-4">Broneeri laud</h2>
-                      <p class="text-xl text-zinc-700">Leia endale lähim restoran</p>
-                      <button type="submit" class="bg-red-600 text-xl text-white mt-6 px-8 py-2 rounded-md w-25 hover:bg-red-900 transition hover:scale-110">Restoranide nimekiri</button>
-                  </div>
-              </div>
-          </div>
-      </div>
+        </div>
 
       <!-- jälgi meid instagramis tehtud kahe gridiga  -->
 
