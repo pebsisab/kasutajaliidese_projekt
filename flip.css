@@ -1,0 +1,212 @@
+h1 {
+    color: #3B3830;
+    font-family: "Barlow", Sans-serif;
+    font-size: 56px;
+    font-weight: 90;
+  }
+
+  h2 {
+    font-family: Vapideco, Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    color: #3B3830;
+  }
+
+  p {
+    font-size: 15px;
+    font-family: "Barlow", Sans-serif;
+    color: #3B3830;
+  }
+
+  .outer_container {
+    background-color: #3B3830;
+    background-image: url(https://vapiano.ee/wp-content/uploads/2020/10/menu-background-chalk-scaled-e1605263667463.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  .container {
+    height: 100%;
+    width: 100%;
+    perspective: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .row1,
+  .row2,
+  .row3,
+  .row4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .row1 {
+    margin-bottom: 30px;
+  }
+
+  .row3 {
+      color:rgb(255, 255, 255);
+      align-items: center;
+      margin-bottom: 30px;
+  }
+
+  .row4 {
+      align-content: center;
+  }
+
+  .card:hover {
+    cursor: pointer;
+    transform: rotateX(180deg);
+  }
+  
+  .card {
+    width: 359.9px;
+    height: 198px;
+    margin: 10px;
+    position: relative;
+    transition: transform 1000ms;
+    transform-style: preserve-3d;
+  }
+  
+  .front,
+  .back {
+    width: 359.9px;
+    height: 198px;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .front1 {
+    background-image: url(https://vapiano.ee/wp-content/uploads/2020/11/Cut-Out-Pasta-Crema-Di-Avocado.png);
+    background-position: -66px 8px;
+    background-repeat: no-repeat;
+    background-size: 53% auto;
+  }
+
+  .front2 {
+    background-image: url(https://vapiano.ee/wp-content/uploads/2020/11/Pizza_Scampi.png);
+    background-position: -71px 12px;
+    background-repeat: no-repeat;
+    background-size: 47% auto;
+  }
+
+  .front3 {
+    background-image: url(https://vapiano.ee/wp-content/uploads/2020/11/Insalata_Nizza.png);
+    background-position: -76px 0px;
+    background-repeat: no-repeat;
+    background-size: 53% auto;
+  }
+
+  .front4 {
+    background-image: url(https://vapiano.ee/wp-content/uploads/2020/11/Dolci_DeathByChocolate.png);
+    background-position: -22px 55px;
+    background-repeat: no-repeat;
+    background-size: 29% auto;
+  }
+
+  .front5 {
+    background-image: url(https://vapiano.ee/wp-content/uploads/2020/11/Bar_Cappucino-2.png);
+    background-position: -31px 29px;
+    background-repeat: no-repeat;
+    background-size: 43% auto;
+  }
+
+  .front6 {
+    background-image: url(https://vapiano.ee/wp-content/uploads/2020/11/KidsPizzaRabbit.png);
+    background-position: -39px 19px;
+    background-repeat: no-repeat;
+    background-size: 44% auto;
+  }
+  
+  .back {
+    background: rgb(255, 255, 255);
+    transform: rotateX(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+
+  .flipcard_button {
+    width: 145px;
+    height: 45px;
+    font-size: 18px;
+    font-family: "Barlow", Sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    background: #DF002D;
+    border: none;
+  }
+
+  .flipcard_button:hover {
+    background: #D2002D;
+  }
+
+  .menu_button {
+    width: 291px;
+    height: 124.8px;
+    font-family: "Barlow", Sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    color: #3B3830;
+    border: none;
+    margin-bottom: 30px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+  }
+
+  .menu_button:hover {
+    transform: scale(1.1);
+    transition: 0.5s all ease;
+  }
+
+  .takeaway {
+    height: 55px;
+    width: 154px;
+  }
+
+  .wolt {
+    height: 55px;
+    width: 79px;
+  }
+
+  .olive {
+    height: 101px;
+    width: 105x;
+  }
+
+  .takeaway:hover {
+    transform: scale(1.1);
+    transition: 0.5s all ease;
+  }
+
+  .wolt:hover {
+    transform: scale(1.1);
+    transition: 0.5s all ease;
+  }
+
+  .logo_container {
+    height: 85px;
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }

@@ -1,0 +1,56 @@
+.container {
+    position: relative;
+    background: #aad5f6;
+}
+
+.slide1 {
+    background: url('img/vap1.jpg');
+}
+
+.slide2 {
+    background: url('img/vap2.jpg');
+}
+
+.slide3 {
+    background: url('img/vap3.jpg');
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.caption{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 40px 0px;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 100;
+    /*background: rgba(0, 0, 0, 0.1);*/
+    border-radius: 50%;
+    transform: background 500ms;
+}
+
+.arrow img{
+    width: 50px;
+}
+
+.l {
+    left: 0;
+}
+
+.r {
+    right: 0;
+}
