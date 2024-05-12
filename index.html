@@ -7,7 +7,8 @@
     <title>Vapiano - Värskuse kodu!</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="slider.css"> 
-    <link rel="stylesheet" href="flip.css">  
+    <link rel="stylesheet" href="flip.css">
+    <link rel="stylesheet" href="eripakkumised.css">  
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -45,24 +46,26 @@
 
 
 <!--Piltide slider lehe yleval osas-->
-<div class="container relative">
+<div class="container">
   <div class="arrow l" onclick="prev()">
       <img src="img/l.png" alt="left arrow">
   </div>
-  <div class="slide slide1"></div>
-  <div class="slide slide2"></div>
+  <div class="slide slide1"><p class="text_slider1">Tööpäeviti<br>11:00-14:00</p></div>
+  <div class="slide slide2"><p class="text_slider">Telli Vapianot Wolt'ist</p></div>
   <div class="slide slide3"></div>
   <div class="arrow r" onclick="next()">
       <img src="img/r.png" alt="right arrow">
   </div>
+  <button class="button1">Vaata siit</button>
 </div>
 <script>
   let slide = document.querySelectorAll('.slide');
   var current = 0;
+  var intervalID;
 
   function cls(){
       for(let i = 0; i < slide.length; i++){
-          slide[i].style.display = 'none';
+          slide[i].style.opacity = 0;
       }
   }
 
@@ -70,7 +73,7 @@
       cls();
       if(current === slide.length-1) current = -1;
       current++;
-      slide[current].style.display = 'block';
+      slide[current].style.opacity = 1;
 
   } 
 
@@ -78,25 +81,26 @@
       cls();
       if(current === 0) current = slide.length;
       current--;
-      slide[current].style.display = 'block';
+      slide[current].style.opacity = 1;
 
   } 
 
   function start(){
       cls();
-      slide[current].style.display = 'block';
+      slide[current].style.opacity = 1;
   }
   start();
+  intervalID = setInterval(next, 5000);
 </script>
 
-<!-- Kastid mis keeravad end ymber vms -->
+<!-- Kastid mis keeravad end ymber vms + menüü osa -->
 
 <div class="outer_container">
   <div class="container_inner">
       <div class="row0">
         <div class="message_w_olives">
           <img class="olive2" src="https://vapiano.ee/wp-content/uploads/2020/10/Olive1.png">
-          <div>
+          <div class="quote">
             <h3>"Chi va piano,</h3>
             <h3>va sano e va</h3>
             <h3>lontano."</h3>
@@ -169,6 +173,31 @@
           <div class="logo_container"><img class="wolt" src="https://vapiano.ee/wp-content/uploads/2020/10/Wolt_Logo_RGB_pepper.png"></div>
       </div>
   </div>
+</div>
+
+<!-- Vapiano eripakkumised osa kuni oranzide kastideni -->
+
+<div class="eripakkumised">
+  <h3>VAPIANO ERIPAKKUMISED</h3>
+</div>
+<div class="pakkumised_container">
+  <div class="row1_ep">
+    <img class="epcard" src="https://vapiano.ee/wp-content/uploads/2024/03/EST-Spring-Specials-2024_768x432px_offer.jpg" alt="uudisroad">
+    <img class="epcard" src="https://vapiano.ee/wp-content/uploads/2022/09/EST-Lunch-offers-2022_768x432px.jpg" alt="louna">
+    <img class="epcard" src="https://vapiano.ee/wp-content/uploads/2024/03/website-offer-small-banner768-x-435-px-768x432.jpg" alt="pakkumised">
+  </div>
+  <div class="row2_ep">
+    <button class="ep_button">Vaata rohkem pakkumisi</button>
+  </div>
+  <div class="row3_ep">
+    <img class="orange_logo" src="https://vapiano.ee/wp-content/uploads/2023/11/Apollo-logo.png" alt="">
+    <img class="orange" src="https://vapiano.ee/wp-content/uploads/2023/11/Iga-8.png" alt="">
+    <img class="orange" src="https://vapiano.ee/wp-content/uploads/2023/11/5E-Kinkekaart.png" alt="">
+    <img class="orange" src="https://vapiano.ee/wp-content/uploads/2023/11/Esmaspaeviti.png" alt="">
+    <img class="orange" src="https://vapiano.ee/wp-content/uploads/2023/11/Koik-kuumad.png" alt="">
+    <button class="ep_button2"><span>&#9733;</span>LIITU SIIN</button>
+  </div>
+
 </div>
 
 <!-- kahe pildiga grid  -->

@@ -1,0 +1,83 @@
+.eripakkumised {
+    font-family: optima, sans-serif;
+    font-size: 5vh;
+    margin: 2.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.pakkumised_container {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    
+}
+
+.row1_ep, .row2_ep, .row3_ep {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.row3_ep {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row2_ep {
+    margin-bottom: 3%;
+}
+
+.epcard {
+    width: 23vw;
+    height: 28vh;
+    border-radius: 1.1rem;
+    margin: 10px;
+}
+
+.ep_button {
+    width: 18vw;
+    height: 7.5vh;
+    font-size: 3vh;
+    font-family: "Barlow", Sans-serif;
+    color: rgb(255, 255, 255);
+    border-radius: 8px;
+    background: #DF002D;
+    border: none;
+    margin: 1.6%;
+}
+
+.ep_button:hover {
+    background: #D2002D;
+    transform: scale(1.1);
+    transition: 0.5s all ease;
+}
+
+.orange, .orange_logo {
+    width: 10vw;
+    margin: 10px;
+}
+
+.orange:hover {
+    transform: scale(1.1);
+    transition: 0.5s all ease;
+  }
+
+.ep_button2 {
+    background: #ff8300;
+    border-radius: 8px;
+    border: none;
+    width: 8vw;
+    height: 7vh;
+    font-size: 2.3vh;
+    font-family: "Barlow", Sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 3%;
+}
+
+.ep_button2:hover {
+    transform: scale(1.1);
+    transition: 0.5s all ease;
+    background: #de7d15;
+  }

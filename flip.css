@@ -1,7 +1,8 @@
 h1 {
     color: #3B3830;
-    font-family: "Barlow", Sans-serif;
-    font-size: 56px;
+    /*font-family: "Barlow", Sans-serif;*/
+    font-family: Tahoma, Verdana, sans-serif;
+    font-size: 5.6vh;
     font-weight: 90;
   }
 
@@ -17,12 +18,12 @@ h1 {
     color: #3B3830;
   }
 
-  .outer_container {
+  .outer_container, .pakkumised_container {
     background-color: #3B3830;
     background-image: url(https://vapiano.ee/wp-content/uploads/2020/10/menu-background-chalk-scaled-e1605263667463.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     width: 100%;
   }
   
@@ -38,15 +39,15 @@ h1 {
   }
 
   .message_w_olives {
-    font-size: 5.6vh;
+    font-size: 7.6vh;
     font-family: "Brush Script MT", cursive;
     color: #3B3830;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    /*align-content: center;*/
+    justify-content: space-around;
   }
 
-  .row1, .row2, .row3, .row4, .message_w_olives, .menu {
+  .row1, .row2, .row3, .row4, .menu {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -65,16 +66,16 @@ h1 {
       font-family: "Impact", Sans-serif;
   }
 
-  .row4, .message_w_olives {
+  .row4 {
       align-content: center;
   }
 
   .row0 {
     background-image: url(img/whitebanner.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     width: 100%;
-    background-size: cover;
+    /*background-position: center top;*/
   }
 
   .card:hover {
@@ -83,8 +84,8 @@ h1 {
   }
   
   .card {
-    width: 359.9px;
-    height: 198px;
+    width: 23vw; 
+    height: 28vh;
     margin: 10px;
     position: relative;
     transition: transform 1000ms;
@@ -93,9 +94,9 @@ h1 {
   
   .front,
   .back {
-    width: 359.9px;
-    height: 198px;
-    border-radius: 2rem;
+    width: 23vw;
+    height: 28vh;
+    border-radius: 1.1rem;
     box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
     position: absolute;
     backface-visibility: hidden;
@@ -158,7 +159,7 @@ h1 {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
   }
 
   .flipcard_button {
@@ -174,6 +175,13 @@ h1 {
 
   .flipcard_button:hover {
     background: #D2002D;
+  }
+
+  .quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .menu_button {
@@ -196,22 +204,22 @@ h1 {
   }
 
   .takeaway {
-    height: 55px;
-    width: 154px;
+    height: 8vh;
+    /*width: 154px;*/
   }
 
   .wolt {
-    height: 55px;
-    width: 79px;
+    height: 6vh; /*55px*/
+    /*width: 15%; /*79px*/
   }
 
   .olive {
-    height: 101px;
-    width: 105x;
+    height: 17%; /*101px*/
+    width: 17%; /*105px*/
   }
 
   .olive2 {
-    height: 250px;
+    height: 35vh; /*250px*/
   }
 
   .takeaway:hover {
